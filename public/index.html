@@ -29,7 +29,7 @@
       <table class="table">          
         <thead>
           <tr>
-            <td>Emp Name</td>
+            <td>Name</td>
             <td>Email</td>
             <td>Date of Birth</td>
             <td>Department</td>
@@ -61,7 +61,7 @@
                   <td>
                     <input type="number" ng-model="employee.age" disabled class="form-control"                                          placeholder="Age"/>
                   </td>
-                  <td align="center">
+                  <td>
                       <button class="btn btn-success btn-md" ng-click="addEmployee()">Add Employee</button>
                       <td><button class="btn btn-success btn-md" ng-click="updateEmployee()">Update Employee</button></td>
                   </td>
@@ -76,7 +76,7 @@
                 <td>{{employee.department}}</td>
                 <td>{{employee.gender}}</td>
                 <td>{{employee.age}}</td>
-                <td colspan="2" >
+                <td colspan="2">
                   <button class="btn btn-danger btn-sm" ng-click="removeEmployee(employee._id)">Delete</button>&nbsp;&nbsp;
                   <button class="btn btn-primary btn-sm" ng-click="editEmployee(employee._id)">Edit</button>
                 </td>
